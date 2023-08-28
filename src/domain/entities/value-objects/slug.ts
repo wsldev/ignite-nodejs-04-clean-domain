@@ -14,7 +14,7 @@ export class Slug {
    */
   static createFromtext(text: string) {
     const slugText = text
-      .normalize("NFKD")
+      .normalize('NFKD')
       .toLowerCase()
       .trim()
       .replace(/\s+/g, '-')
